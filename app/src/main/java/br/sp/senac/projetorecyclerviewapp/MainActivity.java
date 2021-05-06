@@ -44,7 +44,14 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerViewAdapter mAdapter = new RecyclerViewAdapter(getApplicationContext(), lstLivros);
 
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.HORIZONTAL, false));
+        //LinearLayoutManager Horizontal
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false));
+
+        //LinearLayoutManager vertical
+        //mRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
+
+        //GridLayoutManager
+        //mRecyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),3));
 
 
         mRecyclerView.setAdapter(mAdapter);
